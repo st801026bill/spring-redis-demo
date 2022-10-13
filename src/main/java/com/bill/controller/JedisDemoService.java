@@ -9,8 +9,8 @@ public class JedisDemoService {
     @Autowired
     private JedisUtils jedisUtils;
 
-    public String set(String key, String value) {
-        return jedisUtils.set(key, value);
+    public void set(String key, String value) {
+        jedisUtils.set(key, value);
     }
 
     public String get(String key) {
